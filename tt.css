@@ -1,0 +1,219 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+  }
+  
+  body {
+    background: #2A5449;
+    color: #333;
+  }
+  
+  /* Center wrapper */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1rem;
+  }
+  
+  /* Form box */
+  .form-box {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 96vw;
+    /* max-width: 420px; */
+  }
+  
+  .title {
+    text-align: center;
+    color: #0d4d2e;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .subtitle {
+    text-align: center;
+    color: #444;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Card sections */
+  .form-card {
+    background: #f4f6f5;
+    padding: 1rem;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+  }
+  
+  .form-card h3 {
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+    color: #0d4d2e;
+  }
+  
+  /* Inputs */
+  input,
+  select {
+    width: 100%;
+    padding: 0.7rem;
+    margin-bottom: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    font-size: 0.95rem;
+  }
+  
+  input:focus,
+  select:focus {
+    border-color: #0d4d2e;
+    box-shadow: 0 0 4px rgba(13, 77, 46, 0.3);
+  }
+  
+  /* Upload button */
+  .upload-btn {
+    display: inline-block;
+    background: #0d4d2e;
+    color: white;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 0.8rem;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  
+  /* Submit button */
+  .submit-btn {
+    width: 100%;
+    background: #0d4d2e;
+    color: white;
+    padding: 0.9rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background 0.2s ease;
+  }
+  
+  .submit-btn:hover {
+    background: #13693e;
+  }
+  
+
+  /* Name Row: First + Last side by side */
+.name-row {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.name-row input {
+  flex: 1;
+}
+
+
+  /* ============================= */
+  /* 📱 Responsive Media Queries   */
+  /* ============================= */
+  
+  /* Small phones (<= 360px) */
+  @media (max-width: 360px) {
+    .form-box {
+      padding: 1.2rem;
+      border-radius: 12px;
+    }
+  
+    .title {
+      font-size: 1.4rem;
+    }
+  
+    .subtitle {
+      font-size: 0.9rem;
+    }
+  
+    input, select {
+      font-size: 0.85rem;
+      padding: 0.6rem;
+    }
+  
+    .submit-btn {
+      font-size: 0.9rem;
+      padding: 0.7rem;
+    }
+  }
+  
+  /* Normal phones (361px - 600px) */
+  @media (min-width: 361px) and (max-width: 600px) {
+    .form-box {
+      padding: 1.5rem;
+    }
+  
+    .title {
+      font-size: 1.6rem;
+    }
+  
+    input, select {
+      font-size: 0.9rem;
+      padding: 0.65rem;
+    }
+  }
+  
+  /* Tablets (601px - 900px) */
+  @media (min-width: 601px) and (max-width: 900px) {
+    .form-box {
+      /* max-width: 500px; */
+      padding: 2.5rem;
+    }
+  
+    .title {
+      font-size: 2rem;
+    }
+  
+    .subtitle {
+      font-size: 1.1rem;
+    }
+  
+    input, select {
+      font-size: 1rem;
+      padding: 0.75rem;
+    }
+  }
+  
+  /* Laptops & Desktops (>= 901px) */
+  @media (min-width: 901px) {
+    .form-box {
+      /* max-width: 600px; */
+      padding: 3rem;
+    }
+  
+    .title {
+      font-size: 2.2rem;
+    }
+  
+    .subtitle {
+      font-size: 1.2rem;
+    }
+  
+    input, select {
+      font-size: 1rem;
+    }
+  
+    .submit-btn {
+      font-size: 1.1rem;
+    }
+  }
+  
+
+  /* On small screens, stack them */
+@media (max-width: 480px) {
+  .name-row {
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+}

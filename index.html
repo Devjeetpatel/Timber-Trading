@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TimberBiz - Business Registration</title>
+  <link rel="stylesheet" href="tt.css">
+</head>
+
+<body>
+  <form>
+    <div class="container">
+      <div class="form-box">
+        <h1 class="title">🌲 TimberBiz</h1>
+        <h2 class="subtitle">Register Business</h2>
+
+        <!-- GST & Name -->
+        <div class="form-card">
+          <h3>📜 GST & Name</h3>
+          <input type="text" placeholder="GST Number" required minlength="15" maxlength="15"
+            pattern="[0-9A-Z]{15}" 
+            title="Please enter a valid 15-character GST number.">
+          <input type="text" placeholder="Business Name"  title="Please enter only letters">
+          <input type="text" placeholder="Business Address" title="Please enter only letters">
+        </div>
+
+        <!-- Contact Info -->
+        <div class="form-card">
+          <h3>👤 Contact Info</h3>
+          <div class="name-row">
+            <input type="text" placeholder="First Name" pattern="[A-Z][a-zA-Z]*"
+              title="First letter must be a capital letter." minlength="2" maxlength="20" required>
+            <input type="text" placeholder="Last Name" pattern="[A-Z][a-zA-Z]*"
+              title="First letter must be a capital letter." minlength="2" maxlength="20" required>
+          </div>
+          <input type="tel" placeholder="Phone Number" pattern="[0-9]{10}" title="Please enter a 10-digit phone number."
+            required>
+          <input type="email" placeholder="Email">
+        </div>
+
+        <!-- Business Profile -->
+        <div class="form-card">
+          <h3>🏭 Business Profile</h3>
+          <label class="upload-btn">Upload Logo
+            <input type="file" hidden>
+          </label>
+          <select>
+            <option>Teak</option>
+            <option>Plywood</option>
+            <option>Oak</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <input type="submit" value="Register Business" class="submit-btn">
+      </div>
+    </div>
+  </form>
+</body>
+
+</html>
